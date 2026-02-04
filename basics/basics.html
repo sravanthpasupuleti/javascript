@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex HTML Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Complex Table Example</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Category</th>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+                <th rowspan="2">Stock</th>
+            </tr>
+            <tr>
+                <th>Retail</th>
+                <th>Wholesale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Electronics</td>
+                <td>Smartphone</td>
+                <td>$699</td>
+                <td>$599</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>$999</td>
+                <td>$899</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Home Appliances</td>
+                <td>Refrigerator</td>
+                <td>$1200</td>
+                <td>$1100</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Washing Machine</td>
+                <td>$800</td>
+                <td>$750</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>Total Items in Stock</strong></td>
+                <td><strong>115</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
