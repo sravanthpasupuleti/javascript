@@ -7,7 +7,7 @@
 //     let current_year = new Date().getFullYear();
 //     return current_year-year
 // }
-// let age = dob(2003)s
+// let age = dob(2003)
 // console.log(age)
 
 let full_date = new Date().toLocaleTimeString();
