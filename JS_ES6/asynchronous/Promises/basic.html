@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <h1>Promises</h1>
+</body>
+<script>
+    console.log("start")
+let mypromise = new Promise((resolve , reject)=>{
+    console.log("hlo1")
+    let num;
+    if(num){
+    resolve(num)
+    }
+    else{
+        reject(new Error("something went wrong"))
+    }
+})
+
+mypromise.then((res)=> {
+    console.log("resolve",res)
+})
+.catch((rej)=>{
+    console.log("reject",rej)
+})
+
+console.log(mypromise)
+
+console.log("end")
+</script>
+<!-- <script src="basic.js" ></script> -->
+</html>
